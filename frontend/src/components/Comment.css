@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h4 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Comment Styling */
+.comment {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment.internal {
+  border-left: 5px solid #7f8c8d;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 56px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #888;
+}
+
+.internal-badge {
+  background-color: #7f8c8d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.edit-container {
+  margin-top: 12px;
+}
+
+.edit-textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.button-group {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  background-color: #2ecc71;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+}
+
+.comment-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.attachment-container {
+  margin-top: 12px;
+}
+
+.image-attachment img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.file-attachment {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.action-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.edit-button,
+.delete-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #f1c40f;
+  color: white;
+  font-size: 14px;
+  border: none;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.save-button:hover,
+.cancel-button:hover,
+.download-button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .comment {
+    padding: 12px;
+  }
+
+  .comment-container {
+    margin-left: 48px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .timestamp {
+    font-size: 10px;
+  }
+
+  .edit-textarea {
+    font-size: 12px;
+  }
+
+  .button-group {
+    gap: 4px;
+  }
+
+  .save-button,
+  .cancel-button {
+    font-size: 12px;
+  }
+
+  .comment-text {
+    font-size: 12px;
+  }
+
+  .download-button {
+    font-size: 12px;
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 12px;
+  }
+}
